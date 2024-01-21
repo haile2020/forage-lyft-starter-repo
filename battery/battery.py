@@ -1,8 +1,6 @@
-from car import Car
+from abc import ABC
 
-class Battery(Car):
-  def __init__(self, isServiceable):
-    self.isServiceable =isServiceable
 
-  def needs_service(self):
-    return self.isServiceable
+class Battery(ABC):
+    def needs_service(self):
+        pass

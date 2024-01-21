@@ -1,6 +1,7 @@
-class Serviceable():
-  def __init__(self, isServiceable):
-    self.isServiceable = isServiceable
+from abc import ABC, abstractmethod
 
-  def needs_service(self):
-    return self.isServiceable
+
+class Serviceable(ABC):
+    @abstractmethod
+    def needs_service(self):
+        pass

@@ -1,10 +1,7 @@
-from car import Car
+from abc import ABC
 
-class Engine(Car):
-  def __init__(self, isServiceable):
-    super.__init__()
-    self.isServiceable = isServiceable
 
-  def needs_service(self):
-    return self.isServiceable
+class Engine(ABC):
+    def needs_service(self):
+        pass
     
